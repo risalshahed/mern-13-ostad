@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box</title>
+  <style>
+    #div {
+      display: flex;
+      column-gap: 16px;
+    }
+    #content-box {
+      width: 400px;
+      height: 450px;
+      background: cyan;
+      margin-bottom: 24px;
+      padding: 36px;
+      /* box-sizing: content-box; */
+    }
+    #border-box {
+      width: 400px;
+      height: 450px;
+      background: lightblue;
+      box-sizing: border-box;
+      padding: 36px;
+    }
+  </style>
+</head>
+<body>
+  <div id="div">
+    <div id="content-box">
+      Content
+    </div>
+    <div id="border-box">
+      Border
+    </div>
+  </div>
+</body>
+</html>
